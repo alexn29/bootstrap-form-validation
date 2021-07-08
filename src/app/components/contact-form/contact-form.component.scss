@@ -1,6 +1,15 @@
-.contact-form-section {
+section {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
     h2 {
         color: #00168c;
         font-weight: 700;
+    }
+    button {
+        color: #fff;
+        background-color: #00168c;
+        min-width: 125px;
+        border-radius: 1.5rem;
     }
 }
