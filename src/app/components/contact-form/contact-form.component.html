@@ -1,25 +1,27 @@
 <section class="contact-form-section">
+    
     <h2 class="text-center my-4">Get in touch!</h2>
-    <form>
+    
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <div class="row">
-            <div class="form-group col-md-6">
-                <label for="">Name</label>
-                <input class="form-control" type="text">
+            <div class="form-group col">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" formControlName="name">
             </div>
-            <div class="form-group col-md-6">
-                <label for="">E-mail</label>
-                <input class="form-control" type="email">
-            </div>
-            <div class="form-group col-md-12">
-                <label for="">Subject</label>
-                <input class="form-control" type="text">
+            <div class="form-group col">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" formControlName="email">
             </div>
             <div class="form-group col-md-12">
-                <label for="">Comment</label>
-                <textarea class="form-control" rows="4"></textarea>
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" formControlName="subject">
             </div>
             <div class="form-group col-md-12">
-                <button class="btn btn-light" type="submit">Submit</button>
+                <label for="comment">Comment</label>
+                <textarea rows="4" class="form-control" formControlName="comment"></textarea>
+            </div>
+            <div class="form-group col-md-12 text-center">
+                <button class="btn" type="submit">Submit</button>
             </div>
         </div>
     </form>
