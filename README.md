@@ -35,11 +35,11 @@ Instead, your code will looks like:
 ``` html
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="row">
-        <div class="form-group col">
+        <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" formControlName="name">
         </div>
-        <div class="form-group col-md-12 text-center">
+        <div class="form-group">
             <button class="btn" type="submit">Submit</button>
         </div>
     </div>
